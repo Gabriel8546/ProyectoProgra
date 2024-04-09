@@ -1,0 +1,17 @@
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\bin\Debug\net8.0-windows\Proyecto-progra.exe
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\bin\Debug\net8.0-windows\Proyecto-progra.deps.json
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\bin\Debug\net8.0-windows\Proyecto-progra.runtimeconfig.json
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\bin\Debug\net8.0-windows\Proyecto-progra.dll
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\bin\Debug\net8.0-windows\Proyecto-progra.pdb
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto_progra.form1.resources
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.csproj.GenerateResource.cache
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.AssemblyInfoInputs.cache
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.AssemblyInfo.cs
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.csproj.CoreCompileInputs.cache
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.sourcelink.json
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.dll
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\refint\Proyecto-progra.dll
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.pdb
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\Proyecto-progra.genruntimeconfig.cache
+C:\Users\grf16\OneDrive\Escritorio\carrera\1c 2024\progra1\ProyectoProgra\Proyecto-progra\obj\Debug\net8.0-windows\ref\Proyecto-progra.dll
