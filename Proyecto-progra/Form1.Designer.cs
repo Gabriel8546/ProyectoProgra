@@ -137,9 +137,9 @@
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(839, 172);
             label5.Name = "label5";
-            label5.Size = new Size(112, 28);
+            label5.Size = new Size(181, 28);
             label5.TabIndex = 9;
-            label5.Text = "Solicitado ";
+            label5.Text = "Monto Solicitado ";
             // 
             // btnCalcular
             // 

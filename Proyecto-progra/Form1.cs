@@ -16,11 +16,13 @@ namespace Proyecto_progra
             double MontonSolicitado = double.Parse(txtMontoSolicitado.Text);
 
             double InteresAnual = ObtenerMontoPagar(tipoPrestamo);
-            
-        }
-        private double ObtenerMontoPagar(string tipoPrestamo) {
 
-            switch (tipoPrestamo) {
+        }
+        private double ObtenerMontoPagar(string tipoPrestamo)
+        {
+
+            switch (tipoPrestamo)
+            {
                 case "Persona regular":
                     return 0.15;
                 case "Personal Rapido ":
@@ -31,14 +33,15 @@ namespace Proyecto_progra
                     return 0.12;
                 case "Compra Vehiculo Nuevo":
                     return 0.12;
-            
+
                 default:
                     return 0.0;
             }
-          
-            
-        
+
+
+
         }
+
         
     }
 }
