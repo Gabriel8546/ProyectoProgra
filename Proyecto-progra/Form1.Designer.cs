@@ -160,7 +160,7 @@
             // 
             LbnTextoFinal.AutoSize = true;
             LbnTextoFinal.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LbnTextoFinal.Location = new Point(444, 284);
+            LbnTextoFinal.Location = new Point(266, 279);
             LbnTextoFinal.Name = "LbnTextoFinal";
             LbnTextoFinal.Size = new Size(0, 23);
             LbnTextoFinal.TabIndex = 12;

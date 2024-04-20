@@ -17,7 +17,7 @@ namespace Proyecto_progra
             int MontonSolicitado = int.Parse(txtMontoSolicitado.Text);
             double TotPagar;
             double CuotaMensual;
-            MessageBox.Show("poe el"+tipoPrestamo);
+            
             // en varios Objetos se hacen los calculos y aqui se "Reciben"
             TotPagar = CalcularMontoTotalPagar(tipoPrestamo, MontonSolicitado, plazoMeses);
             CuotaMensual = CalcMontoMunsual(TotPagar, plazoMeses);
@@ -50,28 +50,30 @@ namespace Proyecto_progra
 
         private void MostrarGatantias(string tipoPrestamo) {
             string garantias = "";
-         garantias = ObtenerGarantias("Las garantias para este tipo de prestamo son: \n"+tipoPrestamo);
-            
-        
-          LbnTextoFinal.Text = garantias;   
+         garantias = ObtenerGarantias(tipoPrestamo);
+            string imprimir = "Las garantias para este tipo de prestamo son:\n" + garantias;
+
+
+          LbnTextoFinal.Text = imprimir;   
         
         }
         private string ObtenerGarantias(string tipoPrestamo) {
-            
+            tipoPrestamo = tipoPrestamo.ToLower();
+            MessageBox.Show(tipoPrestamo);
             switch(tipoPrestamo) {
 
-                case "Persona Regular":
+                case "persona regular":
                     return "Fiduciarias, Hipotecarias o Prendaria";
-                case "Personal Rapido":
+                case "personal rapido":
                     return "Constancia Salarial Deducción de Planilla";
-                case "Equipo Electromedicina":
+                case "equipo electromedicina":
                     return "Fiduciarias";
-                case "Emprendimiento y estudios de postgrados ":
+                case "emprendimiento y estudios de posgrados":
                     return "Fiduciarias o Hipotecarias";
-                case "Compra Vehiculo Nuevo":
+                case "compra vehiculo nuevo":
                     return "Fiduciarias, Hipotecarias o Prendaria";
                 default:
-                    return "";
+                    return "Texto predeterminado";
             }
         }
         private double ObtenerInteresPagar(string tipoPrestamo)
