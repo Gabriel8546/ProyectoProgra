@@ -41,6 +41,8 @@
             txtMontoSolicitado = new TextBox();
             label5 = new Label();
             btnCalcular = new Button();
+            LbnTextoFinal = new Label();
+            labResultado = new Label();
             SuspendLayout();
             // 
             // label1
@@ -65,6 +67,7 @@
             // 
             // txtNombreCliente
             // 
+            txtNombreCliente.Font = new Font("Microsoft Sans Serif", 8.25F);
             txtNombreCliente.Location = new Point(12, 110);
             txtNombreCliente.Name = "txtNombreCliente";
             txtNombreCliente.Size = new Size(191, 23);
@@ -82,7 +85,7 @@
             // cmbTipoPrestamo
             // 
             cmbTipoPrestamo.FormattingEnabled = true;
-            cmbTipoPrestamo.Items.AddRange(new object[] { "Persona regular ", "Personal Rapido ", "Equipo electromedicina", "Emprendimineto y estudios de postgrados ", "Compra Vehiculo Nuevo" });
+            cmbTipoPrestamo.Items.AddRange(new object[] { "Persona Regular", "Personal Rapido ", "Equipo Electromedicina", "Emprendimiento y estudios de postgrados ", "Compra Vehiculo Nuevo" });
             cmbTipoPrestamo.Location = new Point(12, 350);
             cmbTipoPrestamo.Name = "cmbTipoPrestamo";
             cmbTipoPrestamo.Size = new Size(191, 25);
@@ -145,7 +148,7 @@
             // btnCalcular
             // 
             btnCalcular.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCalcular.Location = new Point(481, 391);
+            btnCalcular.Location = new Point(474, 390);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(112, 29);
             btnCalcular.TabIndex = 11;
@@ -153,12 +156,32 @@
             btnCalcular.UseVisualStyleBackColor = true;
             btnCalcular.Click += btnCalcular_Click;
             // 
+            // LbnTextoFinal
+            // 
+            LbnTextoFinal.AutoSize = true;
+            LbnTextoFinal.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LbnTextoFinal.Location = new Point(444, 284);
+            LbnTextoFinal.Name = "LbnTextoFinal";
+            LbnTextoFinal.Size = new Size(0, 23);
+            LbnTextoFinal.TabIndex = 12;
+            // 
+            // labResultado
+            // 
+            labResultado.AutoSize = true;
+            labResultado.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labResultado.Location = new Point(266, 172);
+            labResultado.Name = "labResultado";
+            labResultado.Size = new Size(0, 23);
+            labResultado.TabIndex = 13;
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
             ClientSize = new Size(1115, 483);
+            Controls.Add(labResultado);
+            Controls.Add(LbnTextoFinal);
             Controls.Add(btnCalcular);
             Controls.Add(txtMontoSolicitado);
             Controls.Add(label5);
@@ -175,6 +198,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "form1";
             Text = "Calculadora de prestamos ";
+            Load += form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -193,5 +217,7 @@
         private TextBox txtMontoSolicitado;
         private Label label5;
         private Button btnCalcular;
+        private Label LbnTextoFinal;
+        private Label labResultado;
     }
 }
