@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             label1 = new Label();
             label2 = new Label();
             txtNombreCliente = new TextBox();
@@ -171,8 +172,9 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Microsoft Sans Serif", 8.25F);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "form1";
-            Text = "Form1";
+            Text = "Calculadora de prestamos ";
             ResumeLayout(false);
             PerformLayout();
         }
