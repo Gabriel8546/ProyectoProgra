@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\grf16\\OneDrive\\Escritorio\\carrera\\1c 2024\\progra1\\ProyectoProgra\\Proyecto-progra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{511D63BD-ACAF-4793-8D63-25EF3E4E52A2}|Proyecto-progra.csproj|C:\\Users\\grf16\\OneDrive\\Escritorio\\carrera\\1c 2024\\progra1\\ProyectoProgra\\Proyecto-progra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{511D63BD-ACAF-4793-8D63-25EF3E4E52A2}|Proyecto-progra.csproj|c:\\users\\grf16\\onedrive\\escritorio\\carrera\\1c 2024\\progra1\\proyectoprogra\\proyecto-progra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{511D63BD-ACAF-4793-8D63-25EF3E4E52A2}|Proyecto-progra.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{511D63BD-ACAF-4793-8D63-25EF3E4E52A2}|Proyecto-progra.csproj|c:\\users\\grf16\\onedrive\\escritorio\\carrera\\1c 2024\\progra1\\proyectoprogra\\proyecto-progra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{511D63BD-ACAF-4793-8D63-25EF3E4E52A2}|Proyecto-progra.csproj|C:\\Users\\grf16\\OneDrive\\Escritorio\\carrera\\1c 2024\\progra1\\ProyectoProgra\\Proyecto-progra\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{511D63BD-ACAF-4793-8D63-25EF3E4E52A2}|Proyecto-progra.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -43,7 +43,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\grf16\\OneDrive\\Escritorio\\carrera\\1c 2024\\progra1\\ProyectoProgra\\Proyecto-progra\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAAB4AAAANAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwCcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T18:07:55.482Z",
               "EditorCaption": ""
@@ -57,8 +57,7 @@
               "ToolTip": "C:\\Users\\grf16\\OneDrive\\Escritorio\\carrera\\1c 2024\\progra1\\ProyectoProgra\\Proyecto-progra\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:17:28.702Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-04-09T16:17:28.702Z"
             }
           ]
         }

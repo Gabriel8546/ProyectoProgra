@@ -27,12 +27,12 @@ namespace Proyecto_progra
                 LimpiarDatos();
             }
             else if (tipoCliente == "Tipo A1" || tipoCliente == "TipoA2") {
-                AplicarDescu(0.2,MontonSolicitado);    
+                AplicarDescu(0.02,TotPagar);    
             }
         }
-        private void AplicarDescu(double porcetajeDescu, double MontonSolicitado)
+        private void AplicarDescu(double porcetajeDescu, double TotPagar)
         {
-            MontonSolicitado = MontonSolicitado - (MontonSolicitado * porcetajeDescu);
+            TotPagar = TotPagar - (TotPagar * porcetajeDescu);
       
         }
         private void LimpiarDatos() { 
