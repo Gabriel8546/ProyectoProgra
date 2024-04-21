@@ -5,6 +5,7 @@ namespace Proyecto_progra
         public form1()
         {
             InitializeComponent();
+
         }
 
         public void btnCalcular_Click(object sender, EventArgs e)
@@ -17,11 +18,11 @@ namespace Proyecto_progra
             int MontonSolicitado = int.Parse(txtMontoSolicitado.Text);
             double TotPagar;
             double CuotaMensual;
-            
+
             // en varios Objetos se hacen los calculos y aqui se "Reciben"
             TotPagar = CalcularMontoTotalPagar(tipoPrestamo, MontonSolicitado, plazoMeses);
             CuotaMensual = CalcMontoMunsual(TotPagar, plazoMeses);
-            
+
             //Luego verificamos el tipo de cliente,es decir si se puede hacer el prestamo y si tiene descuento 
             if (tipoCliente == "Tipo C")
             {
@@ -33,8 +34,8 @@ namespace Proyecto_progra
                 AplicarDescu(0.02, TotPagar);
             }
 
-            string resu = "Estimado "+ nomCliente+", como cliente  "+tipoCliente+" el monto total a pagar es "+TotPagar+" \n y una cuota  mensual  de "+CuotaMensual;
-            labResultado.Text= resu;
+            string resu = "Estimado " + nomCliente + ", como cliente  " + tipoCliente + " el monto total a pagar es " + TotPagar + " \n y una cuota  mensual  de " + CuotaMensual;
+            labResultado.Text = resu;
             MostrarGatantias(tipoPrestamo);
         }
         private void AplicarDescu(double porcetajeDescu, double TotPagar)
@@ -48,19 +49,22 @@ namespace Proyecto_progra
             labResultado.Text = "";
         }
 
-        private void MostrarGatantias(string tipoPrestamo) {
+        private void MostrarGatantias(string tipoPrestamo)
+        {
             string garantias = "";
-         garantias = ObtenerGarantias(tipoPrestamo);
+            garantias = ObtenerGarantias(tipoPrestamo);
             string imprimir = "Las garantias para este tipo de prestamo son:\n" + garantias;
 
 
-          LbnTextoFinal.Text = imprimir;   
-        
+            LbnTextoFinal.Text = imprimir;
+
         }
-        private string ObtenerGarantias(string tipoPrestamo) {
+        private string ObtenerGarantias(string tipoPrestamo)
+        {
             tipoPrestamo = tipoPrestamo.ToLower();
             MessageBox.Show(tipoPrestamo);
-            switch(tipoPrestamo) {
+            switch (tipoPrestamo)
+            {
 
                 case "persona regular":
                     return "Fiduciarias, Hipotecarias o Prendaria";
@@ -73,7 +77,7 @@ namespace Proyecto_progra
                 case "compra vehiculo nuevo":
                     return "Fiduciarias, Hipotecarias o Prendaria";
                 default:
-                    return "Texto predeterminado";
+                    return "";
             }
         }
         private double ObtenerInteresPagar(string tipoPrestamo)
@@ -103,9 +107,9 @@ namespace Proyecto_progra
 
         private double CalcularMontoTotalPagar(string tipoPrestamo, double MontonSolicitado, int plazoMeses)
         {
-            double interesMesual = ObtenerInteresPagar(tipoPrestamo)/12;
-            double InteresAcumulados = (MontonSolicitado * interesMesual) * plazoMeses; 
-            double MontoPagar = MontonSolicitado +InteresAcumulados;
+            double interesMesual = ObtenerInteresPagar(tipoPrestamo) / 12;
+            double InteresAcumulados = (MontonSolicitado * interesMesual) * plazoMeses;
+            double MontoPagar = MontonSolicitado + InteresAcumulados;
             return MontoPagar;
         }
 
@@ -119,6 +123,11 @@ namespace Proyecto_progra
         }
 
         private void form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
