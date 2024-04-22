@@ -1,3 +1,5 @@
+using System.Diagnostics.Metrics;
+
 namespace Proyecto_progra
 {
     public partial class form1 : Form
@@ -6,6 +8,56 @@ namespace Proyecto_progra
         {
             InitializeComponent();
 
+        }
+
+        private bool ValidarLimitesPrestamos(string tipoPrestamo, int MontonSolicitado, int plazoMeses) { 
+        
+         double montoMaximo = 0;  
+         int  plazoMaximo = 0;
+            tipoPrestamo = tipoPrestamo.ToLower();
+            switch (tipoPrestamo)
+            {
+
+                case "persona regular":
+                    montoMaximo = 15000000; 
+                    plazoMaximo = 60; 
+                    break;
+                case "personal rapido":
+                    montoMaximo = 1000000; 
+                    plazoMaximo = 24; 
+                    break;
+                case "equipo electromedicina":
+                    montoMaximo = 15000000; 
+                    plazoMaximo = 84; 
+                    break;
+                case "emprendimiento y estudios de posgrados":
+                    montoMaximo = 15000000; 
+                    plazoMaximo = 84; 
+                    break;
+                case "compra vehiculo nuevo":
+                    montoMaximo = 15000000; 
+                    plazoMaximo = 60; 
+                    break;
+
+                default:
+                    MessageBox.Show("Tipo de préstamo desconocido");
+                    return false;
+
+            }
+        
+
+             if (MontonSolicitado > montoMaximo)
+                {
+                    MessageBox.Show($"El monto solicitado excede el máximo permitido para el tipo de prestamo " +tipoPrestamo);
+                    return false;
+                }
+            if (plazoMeses > plazoMaximo)
+            {
+                MessageBox.Show($"El plazo solicitado excede el máximo permitido el tipo de prestamo " + tipoPrestamo);
+                return false;
+            }
+
+            return true;
         }
 
         public void btnCalcular_Click(object sender, EventArgs e)
@@ -18,7 +70,10 @@ namespace Proyecto_progra
             int MontonSolicitado = int.Parse(txtMontoSolicitado.Text);
             double TotPagar;
             double CuotaMensual;
-
+            if (!ValidarLimitesPrestamos(tipoPrestamo, MontonSolicitado, plazoMeses))
+             {
+                return; //detiene la ejecucion antes de que se termine 
+            }
             // en varios Objetos se hacen los calculos y aqui se "Reciben"
             TotPagar = CalcularMontoTotalPagar(tipoPrestamo, MontonSolicitado, plazoMeses);
             CuotaMensual = CalcMontoMunsual(TotPagar, plazoMeses);
@@ -34,6 +89,9 @@ namespace Proyecto_progra
                 AplicarDescu(0.02, TotPagar);
             }
 
+
+
+
             string resu = "Estimado " + nomCliente + ", como cliente  " + tipoCliente + " el monto total a pagar es " + TotPagar + " \n y una cuota  mensual  de " + CuotaMensual;
             labResultado.Text = resu;
             MostrarGatantias(tipoPrestamo);
@@ -45,6 +103,10 @@ namespace Proyecto_progra
         }
         private void LimpiarDatos()
         {
+            cmbTipoCliente.Items.Clear();   
+            cmbTipoPrestamo.Items.Clear();
+            txtPlazoMeses.Clear();  
+            txtMontoSolicitado.Clear();
             LbnTextoFinal.Text = "";
             labResultado.Text = "";
         }
@@ -62,7 +124,7 @@ namespace Proyecto_progra
         private string ObtenerGarantias(string tipoPrestamo)
         {
             tipoPrestamo = tipoPrestamo.ToLower();
-            MessageBox.Show(tipoPrestamo);
+            
             switch (tipoPrestamo)
             {
 
@@ -82,18 +144,18 @@ namespace Proyecto_progra
         }
         private double ObtenerInteresPagar(string tipoPrestamo)
         {
-
+            tipoPrestamo = tipoPrestamo.ToLower();
             switch (tipoPrestamo)
             {
-                case "Persona regular":
+                case "persona regular":
                     return 0.15;
-                case "Personal Rapido ":
+                case "personal rapido":
                     return 0.18;
-                case "Equipo electromedicina ":
+                case "equipo electromedicina":
                     return 0.12;
-                case "Emprendimineto y estudios de postgrados":
+                case "emprendimiento y estudios de posgrados":
                     return 0.12;
-                case "Compra Vehiculo Nuevo":
+                case "compra vehiculo nuevo":
                     return 0.12;
 
                 default:

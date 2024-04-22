@@ -53,7 +53,7 @@
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(13, 14);
             label1.Name = "label1";
-            label1.Size = new Size(317, 32);
+            label1.Size = new Size(389, 41);
             label1.TabIndex = 0;
             label1.Text = "Calculadora de prestamos ";
             // 
@@ -63,7 +63,7 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(27, 72);
             label2.Name = "label2";
-            label2.Size = new Size(165, 21);
+            label2.Size = new Size(206, 28);
             label2.TabIndex = 1;
             label2.Text = "Nombre del  cliente ";
             // 
@@ -72,7 +72,7 @@
             txtNombreCliente.Font = new Font("Microsoft Sans Serif", 8.25F);
             txtNombreCliente.Location = new Point(13, 115);
             txtNombreCliente.Name = "txtNombreCliente";
-            txtNombreCliente.Size = new Size(191, 20);
+            txtNombreCliente.Size = new Size(191, 23);
             txtNombreCliente.TabIndex = 2;
             // 
             // cmbTipoCliente
@@ -81,16 +81,16 @@
             cmbTipoCliente.Items.AddRange(new object[] { "Tipo A1", "TipoA2", "Tipo B", "Tipo C" });
             cmbTipoCliente.Location = new Point(13, 222);
             cmbTipoCliente.Name = "cmbTipoCliente";
-            cmbTipoCliente.Size = new Size(191, 21);
+            cmbTipoCliente.Size = new Size(191, 25);
             cmbTipoCliente.TabIndex = 3;
             // 
             // cmbTipoPrestamo
             // 
             cmbTipoPrestamo.FormattingEnabled = true;
-            cmbTipoPrestamo.Items.AddRange(new object[] { "Persona Regular", "Personal Rapido ", "Equipo Electromedicina", "Emprendimiento y estudios de postgrados ", "Compra Vehiculo Nuevo" });
+            cmbTipoPrestamo.Items.AddRange(new object[] { "Persona Regular", "Personal Rapido", "Equipo Electromedicina", "Emprendimiento y estudios de postgrados ", "Compra Vehiculo Nuevo" });
             cmbTipoPrestamo.Location = new Point(13, 355);
             cmbTipoPrestamo.Name = "cmbTipoPrestamo";
-            cmbTipoPrestamo.Size = new Size(191, 21);
+            cmbTipoPrestamo.Size = new Size(191, 25);
             cmbTipoPrestamo.TabIndex = 4;
             // 
             // label3
@@ -99,7 +99,7 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(49, 177);
             label3.Name = "label3";
-            label3.Size = new Size(128, 21);
+            label3.Size = new Size(159, 28);
             label3.TabIndex = 5;
             label3.Text = "Tipo del cliente";
             // 
@@ -109,7 +109,7 @@
             lab4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lab4.Location = new Point(17, 313);
             lab4.Name = "lab4";
-            lab4.Size = new Size(143, 21);
+            lab4.Size = new Size(178, 28);
             lab4.TabIndex = 6;
             lab4.Text = "Tipo de prestamo";
             // 
@@ -119,7 +119,7 @@
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(283, 72);
             label4.Name = "label4";
-            label4.Size = new Size(130, 21);
+            label4.Size = new Size(162, 28);
             label4.TabIndex = 7;
             label4.Text = "Plazo en meses ";
             // 
@@ -127,14 +127,14 @@
             // 
             txtPlazoMeses.Location = new Point(248, 115);
             txtPlazoMeses.Name = "txtPlazoMeses";
-            txtPlazoMeses.Size = new Size(191, 20);
+            txtPlazoMeses.Size = new Size(191, 23);
             txtPlazoMeses.TabIndex = 8;
             // 
             // txtMontoSolicitado
             // 
             txtMontoSolicitado.Location = new Point(238, 223);
             txtMontoSolicitado.Name = "txtMontoSolicitado";
-            txtMontoSolicitado.Size = new Size(191, 20);
+            txtMontoSolicitado.Size = new Size(191, 23);
             txtMontoSolicitado.TabIndex = 10;
             // 
             // label5
@@ -143,7 +143,7 @@
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(267, 177);
             label5.Name = "label5";
-            label5.Size = new Size(146, 21);
+            label5.Size = new Size(181, 28);
             label5.TabIndex = 9;
             label5.Text = "Monto Solicitado ";
             // 
@@ -164,7 +164,7 @@
             LbnTextoFinal.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LbnTextoFinal.Location = new Point(12, 500);
             LbnTextoFinal.Name = "LbnTextoFinal";
-            LbnTextoFinal.Size = new Size(0, 19);
+            LbnTextoFinal.Size = new Size(0, 23);
             LbnTextoFinal.TabIndex = 12;
             // 
             // labResultado
@@ -173,7 +173,7 @@
             labResultado.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labResultado.Location = new Point(12, 419);
             labResultado.Name = "labResultado";
-            labResultado.Size = new Size(0, 19);
+            labResultado.Size = new Size(0, 23);
             labResultado.TabIndex = 13;
             // 
             // pictureBox1
@@ -189,7 +189,7 @@
             // 
             // form1
             // 
-            AutoScaleDimensions = new SizeF(6F, 13F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(538, 608);
